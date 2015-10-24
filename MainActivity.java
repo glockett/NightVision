@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         TextView bodyTitle = (TextView) findViewById(com.uk.ninja.qa.nightvision.R.id.body_title);
         TextView bodyText = (TextView) findViewById(com.uk.ninja.qa.nightvision.R.id.body_text);
 
-
         //set night colors
         if (0 <= dtgHour && dtgHour < 5) {
             main_view.setBackgroundColor(Color.parseColor("#000000"));
