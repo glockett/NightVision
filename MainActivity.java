@@ -31,31 +31,31 @@ public class MainActivity extends AppCompatActivity {
         TextView bodyTitle = (TextView) findViewById(com.uk.ninja.qa.nightvision.R.id.body_title);
         TextView bodyText = (TextView) findViewById(com.uk.ninja.qa.nightvision.R.id.body_text);
 
-        //set night.css'
+        //set night colors
         if (0 <= dtgHour && dtgHour < 5) {
             main_view.setBackgroundColor(Color.parseColor("#000000"));
             bodyTitle.setTextColor(Color.parseColor("#FFFFFF"));
             bodyText.setTextColor(Color.parseColor("#FFFFFF"));
         }
-        //set morning.css
+        //set morning colors
         if (5 <= dtgHour && dtgHour < 11) {
             main_view.setBackgroundColor(Color.parseColor("#FFFFFF"));
             bodyTitle.setTextColor(Color.parseColor("#2e69b6"));
             bodyText.setTextColor(Color.parseColor("#000000"));
         }
-        //set day.css
+        //set day colors
         if (11 <= dtgHour && dtgHour < 16) {
             main_view.setBackgroundColor(Color.parseColor("#FFFFFF"));
             bodyTitle.setTextColor(Color.parseColor("#2e69b6"));
             bodyText.setTextColor(Color.parseColor("#000000"));
         }
-        //set evening.css
+        //set evening colors
         if (16 <= dtgHour && dtgHour < 22) {
             main_view.setBackgroundColor(Color.parseColor("#000000"));
             bodyTitle.setTextColor(Color.parseColor("#FFFFFF"));
             bodyText.setTextColor(Color.parseColor("#FFFFFF"));
         }
-        //set night.css
+        //set night colors
         if (22 <= dtgHour && dtgHour <= 24) {
             main_view.setBackgroundColor(Color.parseColor("#000000"));
             bodyTitle.setTextColor(Color.parseColor("#FFFFFF"));
