@@ -4,7 +4,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.RelativeLayout;
@@ -31,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
         TextView bodyTitle = (TextView) findViewById(com.uk.ninja.qa.nightvision.R.id.body_title);
         TextView bodyText = (TextView) findViewById(com.uk.ninja.qa.nightvision.R.id.body_text);
 
-
-        //set night colors
+        //Set night colors
         if (0 <= dtgHour && dtgHour < 5) {
             main_view.setBackgroundColor(Color.parseColor("#000000"));
             bodyTitle.setTextColor(Color.parseColor("#FFFFFF"));
@@ -69,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(com.uk.ninja.qa.nightvision.R.menu.menu_main, menu);
+
         return true;
     }
 
