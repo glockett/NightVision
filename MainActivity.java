@@ -36,25 +36,25 @@ public class MainActivity extends AppCompatActivity {
             bodyTitle.setTextColor(Color.parseColor("#FFFFFF"));
             bodyText.setTextColor(Color.parseColor("#FFFFFF"));
         }
-        //set morning colors
+        //Set morning colors
         if (5 <= dtgHour && dtgHour < 11) {
             main_view.setBackgroundColor(Color.parseColor("#FFFFFF"));
             bodyTitle.setTextColor(Color.parseColor("#2e69b6"));
             bodyText.setTextColor(Color.parseColor("#000000"));
         }
-        //set day colors
+        //Set day colors
         if (11 <= dtgHour && dtgHour < 16) {
             main_view.setBackgroundColor(Color.parseColor("#FFFFFF"));
             bodyTitle.setTextColor(Color.parseColor("#2e69b6"));
             bodyText.setTextColor(Color.parseColor("#000000"));
         }
-        //set evening colors
+        //Set evening colors
         if (16 <= dtgHour && dtgHour < 22) {
             main_view.setBackgroundColor(Color.parseColor("#000000"));
             bodyTitle.setTextColor(Color.parseColor("#FFFFFF"));
             bodyText.setTextColor(Color.parseColor("#FFFFFF"));
         }
-        //set night colors
+        //Set night colors
         if (22 <= dtgHour && dtgHour <= 24) {
             main_view.setBackgroundColor(Color.parseColor("#000000"));
             bodyTitle.setTextColor(Color.parseColor("#FFFFFF"));
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
+        //Sets up the NightVision menu options and executes on select
         RelativeLayout main_view = (RelativeLayout) findViewById(com.uk.ninja.qa.nightvision.R.id.main_view);
         TextView bodyTitle = (TextView) findViewById(com.uk.ninja.qa.nightvision.R.id.body_title);
         TextView bodyText = (TextView) findViewById(com.uk.ninja.qa.nightvision.R.id.body_text);
